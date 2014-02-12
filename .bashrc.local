@@ -1,0 +1,4 @@
+
+alias vim="gvim"
+
+export PATH=~/bin:$PATH
