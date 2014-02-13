@@ -163,7 +163,7 @@ shopt -s histappend
 # Make prompt informative
 # See:  http://www.ukuug.org/events/linux2003/papers/bash_tips/
 #PS1="\[\033[0;34m\][\u@\h:\w]$\[\033[0m\]"
-export PS1="\[\033[1;32m\]\u@\h\[\033[0m\]\[\033[1;34m\] \t \w\$\[\033[0m\] "
+#export PS1="\[\033[1;32m\]\u@\h\[\033[0m\]\[\033[1;34m\] \t \w\$\[\033[0m\] "
 if echo $TERM | egrep -iq 'xterm|vt100'; then
 PS1="\[\033]0;\h:\w\$\007\]"$PS1
 fi
