@@ -13,3 +13,4 @@ ln -s $(pwd)/.gitconfig ~/.gitconfig
 
 source $(pwd)/.bash_profile
 
+git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit"
