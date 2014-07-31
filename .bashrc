@@ -112,6 +112,14 @@ if [ "$PS1" ]; then
       ;;
   esac
 
+  #__git_ps1
+  #http://stackoverflow.com/questions/3058325/what-is-the-difference-between-ps1-and-prompt-command
+  #function prompt_command {
+  #  export PS1=$(~/bin/bash_prompt)
+  #}
+  #export PROMPT_COMMAND=prompt_command
+  #http://stackoverflow.com/questions/4133904/ps1-line-with-git-current-branch-and-colors
+
   # Bash eternal history
   # --------------------
   # This snippet allows infinite recording of every command you've ever

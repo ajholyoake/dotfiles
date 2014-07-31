@@ -10,6 +10,8 @@ ln -s $(pwd)/.bashrc ~/.bashrc
 ln -s $(pwd)/.inputrc ~/.inputrc
 ln -s $(pwd)/.bashrc.local ~/.bashrc.local
 ln -s $(pwd)/.gitconfig ~/.gitconfig
+ln -s $(pwd)/git-completion.bash ~/.git-completion.bash
+ln -s $(pwd)/git-prompt.sh ~/.git-prompt.sh
 
 source $(pwd)/.bash_profile
 

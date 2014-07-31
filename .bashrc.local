@@ -1,4 +1,4 @@
 
 alias vim="gvim"
 
-export PATH=~/bin:$PATH
+export PATH=/usr/local/share/python:~/bin:$PATH
