@@ -43,7 +43,7 @@ esac
 # uncomment for a colored prompt, if the terminal has the capability; turned
 # off by default to not distract the user: the focus in a terminal window
 # should be on the output of commands, not on the prompt
-#force_color_prompt=yes
+force_color_prompt=yes
 
 if [ -n "$force_color_prompt" ]; then
     if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
@@ -95,12 +95,12 @@ alias cp="cp -i"
 set -o noclobber
 
 
-alias ls="ls -alhG "
-alias ll="ls -alrtFG "
-alias la="ls -A"
-alias l="ls -CF"
-alias dir='ls -G --format=vertical'
-alias vdir='ls -G --format=long'
+alias ls="ls -alhG --color=auto"
+alias ll="ls -alrtFG --color=auto"
+alias la="ls -A --color=auto"
+alias l="ls -CF --color=auto"
+alias dir='ls -G --format=vertical --color=auto'
+alias vdir='ls -G --format=long --color=auto'
 alias m='less'
 alias ..='cd ..'
 alias ...='cd ..;cd ..'
