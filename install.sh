@@ -12,6 +12,7 @@ ln -s $(pwd)/.bashrc.local ~/.bashrc.local
 ln -s $(pwd)/.gitconfig ~/.gitconfig
 ln -s $(pwd)/git-completion.bash ~/.git-completion.bash
 ln -s $(pwd)/git-prompt.sh ~/.git-prompt.sh
+ln -s $(pwd)/.bash_secrets ~/.bash_secrets
 
 source $(pwd)/.bash_profile
 

@@ -139,3 +139,4 @@ fi
 
 export INPUTRC=$HOME/.inputrc
 source ~/.bashrc.local
+source ~/.bashrc.secrets
