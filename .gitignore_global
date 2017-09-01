@@ -1,0 +1,6 @@
+.DS_Store
+*.orig
+*BACKUP*.local
+*BASE*.local
+*REMOTE*.local
+*LOCAL*.local
