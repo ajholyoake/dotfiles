@@ -1,4 +1,39 @@
 
 alias vim="gvim"
+alias emacs="/Applications/Emacs.app/Contents/MacOS/Emacs"
 
-export PATH=/usr/local/share/python:~/bin:$PATH
+export PATH=/usr/local/bin:~/bin:$PATH
+export GOROOT=/usr/local/opt/go/libexec
+export GOPATH=$HOME/gopath
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin:~/bin
+
+export MYGO=$GOPATH/src/github.com/ajholyoake
+
+socks()
+{
+if (("$1" == "set"))
+then
+  echo 'yo'
+  export http_proxy="http://127.0.0.1:5000"
+  export https_proxy="http://127.0.0.1:5000"
+else
+  export http_proxy=
+  export https_proxy=
+fi
+}
+
+gg()
+{
+  cd $MYGO/$1
+}
+
+_gg_complete()
+{
+  local cur=${COMP_WORDS[COMP_CWORD]}
+  local names=$(find $MYGO -type d -maxdepth 1 -print0 | xargs -0 basename)
+  COMPREPLY=( $(compgen -W "$names" -- $cur) )
+  
+  return 0
+}
+
+complete -F _gg_complete gg
