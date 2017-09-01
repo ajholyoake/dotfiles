@@ -13,6 +13,9 @@ ln -s $(pwd)/.gitconfig ~/.gitconfig
 ln -s $(pwd)/git-completion.bash ~/.git-completion.bash
 ln -s $(pwd)/git-prompt.sh ~/.git-prompt.sh
 ln -s $(pwd)/.bash_secrets ~/.bash_secrets
+ln -s $(pwd)/tmux ~/.tmux
+ln -s $(pwd)/.tmux.conf ~/.tmux.conf
+
 
 source $(pwd)/.bash_profile
 
