@@ -15,3 +15,10 @@
 	conflictstyle = diff3
 [mergetool]
 	prompt = false
+[github]
+	user = ajholyoake
+[ghi]
+	token = !security find-internet-password -a ajholyoake -s github.com -l 'ghi token' -w
+	editor = vim
+[ghi "highlight"]
+	style = colorful
